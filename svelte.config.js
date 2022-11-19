@@ -16,7 +16,7 @@ const config = {
         }),
         paths: {
             // change below to your repo name
-            base: dev ? """ : "/your-repo-name",
+            base: dev ? """ : "/sveltekit-pwa",
         },
         // hydrate the <div id="svelte"> element in src/app.html
         target: "#svelte"
