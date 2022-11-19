@@ -1,14 +1,14 @@
 const r = [
-  "/sveltekit-pwa/_app/immutable/start-15c4034b.js",
+  "/sveltekit-pwa/_app/immutable/start-6355d648.js",
   "/sveltekit-pwa/_app/immutable/components/layout.svelte-318c4699.js",
-  "/sveltekit-pwa/_app/immutable/components/error.svelte-2d5d05e1.js",
+  "/sveltekit-pwa/_app/immutable/components/error.svelte-87d4f8e1.js",
   "/sveltekit-pwa/_app/immutable/components/pages/_page.svelte-aa58de35.js",
   "/sveltekit-pwa/_app/immutable/modules/pages/_layout.ts-5ffbbe04.js",
-  "/sveltekit-pwa/_app/immutable/chunks/singletons-e0e173b4.js",
+  "/sveltekit-pwa/_app/immutable/chunks/singletons-2e378b84.js",
   "/sveltekit-pwa/_app/immutable/chunks/index-4ce6debf.js",
   "/sveltekit-pwa/_app/immutable/chunks/_layout-b711fdb6.js",
   "/sveltekit-pwa/_app/immutable/chunks/0-531b66cf.js",
-  "/sveltekit-pwa/_app/immutable/chunks/1-7c303990.js",
+  "/sveltekit-pwa/_app/immutable/chunks/1-06f245c2.js",
   "/sveltekit-pwa/_app/immutable/chunks/2-234451a5.js"
 ], h = [
   "/sveltekit-pwa/.nojekyll",
@@ -23,7 +23,7 @@ const r = [
   "/sveltekit-pwa/mstile-150x150.png",
   "/sveltekit-pwa/safari-pinned-tab.svg",
   "/sveltekit-pwa/site.webmanifest"
-], n = "1668880918478", a = self, o = `cache${n}`, p = r.concat(h), m = new Set(p);
+], n = "1668881577001", a = self, o = `cache${n}`, p = r.concat(h), m = new Set(p);
 a.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(o).then((t) => t.addAll(p)).then(() => {
