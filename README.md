@@ -7,3 +7,5 @@ https://thecodingchannel.hashnode.dev/turn-your-sveltekit-app-into-a-pwa-in-3-si
 
 # DEPLOY TO GITHUB PAGES
 https://sveltesaas.com/articles/sveltekit-github-pages-guide/
+
+https://github.com/metonym/sveltekit-gh-pages/tree/master
