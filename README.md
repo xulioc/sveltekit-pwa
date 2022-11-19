@@ -5,3 +5,5 @@ https://tauri.app/v1/guides/getting-started/setup/sveltekit/
 https://thecodingchannel.hashnode.dev/turn-your-sveltekit-app-into-a-pwa-in-3-simple-steps
 
 
+# DEPLOY TO GITHUB PAGES
+https://sveltesaas.com/articles/sveltekit-github-pages-guide/
