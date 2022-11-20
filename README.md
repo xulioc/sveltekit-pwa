@@ -1,3 +1,10 @@
+# Features
+
+- Installable PWA
+- Online/Offline status
+
+
+
 # INIT TAURI APP
 
 https://tauri.app/v1/guides/getting-started/setup/sveltekit/

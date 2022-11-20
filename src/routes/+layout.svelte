@@ -4,8 +4,6 @@
 
 	/* disable right click */
 	document.addEventListener('contextmenu', (event) => event.preventDefault());
-
-	// import { online } from '$lib/stores/online';
 </script>
 
 <svelte:head>
