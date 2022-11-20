@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+	<title>SvelteKit PWA</title>
 
-<title>SvelteKit PWA</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="SvelteKit PWA" />
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="SvelteKit PWA">
+		<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png" />
+		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
+		<link rel="mask-icon" href="%sveltekit.assets%/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png">
-	<link rel="manifest" href="%sveltekit.assets%/site.webmanifest">
-	<link rel="mask-icon" href="%sveltekit.assets%/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+		%sveltekit.head%
+	</head>
 
-
-	%sveltekit.head%
-</head>
-
-<body>
-	<div style="display: contents">%sveltekit.body%</div>
-</body>
-
+	<body>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
