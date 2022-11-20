@@ -1,9 +1,11 @@
 <script>
+	import { PUBLIC_APP_NAME } from '$env/static/public';
+
 	// https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/offline
 
 	// https://dev.to/maxmonteil/is-your-app-online-here-s-how-to-reliably-know-in-just-10-lines-of-js-guide-3in7
 
-	console.log('STARTING APP...', navigator.onLine);
+	console.log(`STARTING ${PUBLIC_APP_NAME} APP...`, navigator.onLine);
 
 	window.addEventListener('online', function () {
 		console.log('You are online!');
@@ -43,7 +45,7 @@
 			</div>
 		</div>
 		<div class="navbar-center">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<a class="btn btn-ghost normal-case text-xl">{PUBLIC_APP_NAME}</a>
 		</div>
 		<div class="navbar-end">
 			<button class="btn btn-ghost btn-circle">
