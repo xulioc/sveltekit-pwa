@@ -1,6 +1,8 @@
 <script>
 	import '../app.css';
 	import { PUBLIC_APP_NAME } from '$env/static/public';
+
+	// import { online } from '$lib/stores/online';
 </script>
 
 <svelte:head>
