@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { PUBLIC_APP_NAME } from '$env/static/public';
-	import { isOnline } from '$lib/components/svelte-connection-status';
+	import { ConnectionStatus } from '$lib/components/svelte-connection-status';
 	import { log } from '$lib/stores/log';
 	import Home from './Home.svelte';
 	import Log from './Log.svelte';
@@ -9,9 +9,19 @@
 	let view = 'home';
 
 	const handleChangeView = (v: string) => {
-		// console.log(v);
 		view = v;
 		log.write('CHANGE VIEW TO ' + v);
+	};
+
+	const handleConnectionChange = ({ detail }: any) => {
+		if (detail.isOffline) {
+			// console.log('>>> you are offline');
+			log.write('YOU ARE OFFLINE');
+		}
+		if (detail.isOnline) {
+			// console.log('>>> you are online');
+			log.write('YOU ARE ONLINE');
+		}
 	};
 </script>
 
@@ -38,22 +48,27 @@
 			<p class="btn btn-ghost normal-case text-xl">{PUBLIC_APP_NAME}</p>
 		</div>
 		<div class="navbar-end">
-			{#if $isOnline}
-				<div class="badge badge-success gap-2">online</div>
-			{:else}
-				<div class="badge badge-error gap-2">offline</div>
-			{/if}
+			<ConnectionStatus on:change={handleConnectionChange}>
+				<span slot="online">
+					<div class="badge badge-success gap-2">online</div>
+				</span>
+				<span slot="offline">
+					<div class="badge badge-error gap-2">offline</div>
+				</span>
+			</ConnectionStatus>
 		</div>
 	</div>
 
-	<!-- VIEWS -->
-	{#if view == 'home'}
-		<Home />
-	{:else if view == 'view1'}
-		<View1 />
-	{:else if view == 'log'}
-		<Log />
-	{/if}
+	<div class="h-max">
+		<!-- VIEWS -->
+		{#if view == 'home'}
+			<Home />
+		{:else if view == 'view1'}
+			<View1 />
+		{:else if view == 'log'}
+			<Log />
+		{/if}
+	</div>
 
 	<footer
 		class="footer footer-center absolute inset-x-0 bottom-0 p-4 bg-base-300 text-base-content"
