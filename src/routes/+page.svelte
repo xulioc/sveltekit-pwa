@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_APP_NAME } from '$env/static/public';
+	import { APP_NAME } from '$lib/constants';
 	import { ConnectionStatus } from '$lib/components/svelte-connection-status';
 	import { log } from '$lib/stores/log';
 	import Home from './Home.svelte';
@@ -45,7 +45,7 @@
 			>
 		</div>
 		<div class="navbar-center">
-			<p class="btn btn-ghost normal-case text-xl">{PUBLIC_APP_NAME}</p>
+			<p class="btn btn-ghost normal-case text-xl">{APP_NAME}</p>
 		</div>
 		<div class="navbar-end">
 			<ConnectionStatus on:change={handleConnectionChange}>
