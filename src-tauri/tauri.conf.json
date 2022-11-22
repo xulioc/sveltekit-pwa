@@ -55,12 +55,16 @@
     },
     "windows": [
       {
-        "fullscreen": false,
+        "fullscreen": true,
+        "width": 800,
         "height": 600,
         "resizable": true,
-        "title": "sveltekit-pwa",
-        "width": 800
+        "title": "sveltekit-pwa"
       }
-    ]
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    }
   }
 }
