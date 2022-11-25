@@ -88,7 +88,7 @@
 			</div>
 
 			<div class="ml-auto">
-				<button class="btn btn-sm" on:click={() => ($popup = !$popup)}>
+				<button id="log" class="btn btn-sm" on:click={() => ($popup = !$popup)}>
 					{#if $popup}
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
