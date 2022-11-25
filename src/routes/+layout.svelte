@@ -3,7 +3,7 @@
 	import { APP_NAME } from '$lib/constants';
 
 	/* disable right click */
-	document.addEventListener('contextmenu', (event) => event.preventDefault());
+	// document.addEventListener('contextmenu', (event) => event.preventDefault());
 </script>
 
 <svelte:head>

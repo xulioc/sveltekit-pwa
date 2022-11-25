@@ -11,3 +11,4 @@ function createLog() {
 }
 
 export const log = createLog();
+export const popup = writable(false);
